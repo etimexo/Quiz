@@ -1,11 +1,8 @@
 "use client";
 import React, { useState } from "react";
 import { quiz } from "./quizData.js";
-// import Question from "./Question";
 
 export default function Quiz() {
-  // const { activeQ, setActiveQ } = useState(0);
-  // const { index, setIndex } = useState(0);
   const [activeQuestion, setActiveQuestion] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState("");
   const [checked, setChecked] = useState(false);
@@ -60,7 +57,6 @@ export default function Quiz() {
           Question {activeQuestion + 1}
           <span>/{questions.length}</span>
         </h2>
-        {/* <Question /> */}
       </div>
       <div>
         {!showResult ? (
@@ -90,7 +86,6 @@ export default function Quiz() {
             <h3>Results</h3>
             <h3>Overall {(result.score / 25) * 100}%</h3>
             <p>Total Questions: <span>{questions.length}</span></p>
-            {/* <p>Total Score: <span>{result.score}</span></p> */}
             <p>Correct Answers: <span>{result.correctAnswers}</span></p>
             <p>Wrong Answers: <span>{result.wrongAnswers}</span></p>
             <button onClick={() => window.location.reload()}>Restart</button>

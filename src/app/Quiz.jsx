@@ -50,7 +50,7 @@ export default function Quiz() {
   }
 
   return (
-    <div className="container flex-row p-48">
+    <div className="container bg-blue-800 w-full rounded-sm border-2 border-slate-700 flex-row">
       <div>
         <h1>Quiz</h1>
         <h2>

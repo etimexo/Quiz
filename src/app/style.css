@@ -1,0 +1,15 @@
+.li-hover {
+    margin-bottom: 10px;
+    /* display: none; */
+}
+li {
+    margin: 10px 0  ;
+    padding: 5px 0;
+}
+li:hover, li:focus {
+    background-color: slategray;
+    border: 1px solid #fff;
+    /* padding: 10px 0; */
+    width: 50%;
+    cursor: pointer;
+}

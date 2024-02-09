@@ -2,7 +2,6 @@
 import { quiz } from "../quizData.js";
 import React, { useState } from "react";
 import "../style.css"
-import Quiz from "../Quiz";
 
 export default function Page() {
   const [activeQuestion, setActiveQuestion] = useState(0);
@@ -53,7 +52,6 @@ export default function Page() {
   };
   return (
     <div className="w-full bg-blue-800 min-h-[100vh] flex-col text-left align-center m-0-auto text-center list-none pt-24 justify-center">
-      {/* <Quiz /> */}
       <div className="card bg-slate-300 w-[70%] m-auto p-12 min-h-fit">
         <div className=" py-4 text-left m-auto">
           <h1 className="font-black text-blue-700 text-2xl">Quiz</h1>
